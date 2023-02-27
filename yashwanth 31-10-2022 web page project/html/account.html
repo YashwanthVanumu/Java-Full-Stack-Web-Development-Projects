@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>create account</title>
+	<link rel="stylesheet" type="text/css" href="../css/index4.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<style type="text/css">
+		label
+		{
+			color: white;
+		}
+		form
+		{
+			padding-top: 30px;
+            border: 0px solid white;
+            margin-left: 100px;
+            margin-right: 100px;
+            justify-content: center;
+		}
+        header
+        {     
+	        display: flex;
+	        border: 0px solid blue;
+	        background-color: #0048ff5c;
+        }
+        img
+        {
+        	border-radius: 50%;
+        }
+        .div1
+        {
+            background: url(../images/book.jpg);
+	        background-repeat: no-repeat;
+	        background-size: 1800px,1200px, cover;
+	        border: 0px solid black;
+	        border-collapse: collapse;
+	        height: 720px;
+	    }
+	    #gender
+	    {
+           padding-right: 248px;
+	    }	
+        #birth
+        {
+        	padding-right: 172px;
+        }
+	</style>
+</head>
+<body>
+	<header style="background-color: #0048ff5c">
+		<img src="../images/nocopy.jpg" height="17%" width="8%">
+		<h1 style="color: #3e2442;">A Computer Science Portal For Geeks</h1>
+    </header>
+    <div style="background-color: #000000b5">
+	<nav>
+		<ul>
+			<i class="fa-solid fa-house" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="index.html">Home</a></li>
+			<i class="fa-solid fa-user" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="login.html">Login</a></li>
+			<i class="fa-solid fa-bars" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="about.html">About</a></li>
+			<i class="fa-solid fa-phone" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav><br><br><br>
+    </div>
+	<hr>
+	<div class="div1">
+	<form>
+		<center>
+		<label>First name</label>
+		<input type="text" size="40"><br><br>
+		<label>Last name</label>
+		<input type="text" size="40"><br><br>
+		<label style="padding-right: 28px">Email</label>           
+	    <input type="text" size="40"><br><br>
+	    <div id="gender">
+	    <label style="margin-right: 22px">Gender</label>
+		<select>
+			<option>Male</option>
+			<option>Female</option>
+		</select><br><br></div>
+		<div id="birth">
+		<label style="margin-right: 10px">Date of Birth</label>   
+		<input type="date" size="40"><br><br></div>
+		<label style="margin-right: 5px">Password</label>
+		<input type="Password" size="40"><br><br>
+		<button type="buttton" size="40">Submit</button>
+	    </center>
+    </form>
+    </div>
+</body>
+</html>		

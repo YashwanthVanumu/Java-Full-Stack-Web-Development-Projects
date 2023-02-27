@@ -1,0 +1,38 @@
+header
+{
+	display: flex;
+	border: 0px solid blue;
+	background-color: #80808000;
+}
+a{
+	text-decoration: none;
+	color: white;
+
+}
+ul{
+	float: right;
+	display: flex;
+
+}
+li{
+	display: inline-block;
+	padding-right: 70px;
+}
+h1
+{
+	margin-left: 280px;
+	color: #3e2442;
+}
+a:hover
+{
+	background-color: gray;
+}
+div.mydiv1
+{
+	background: url(../images/book.jpg);
+	background-repeat: no-repeat;
+	background-size: 1800px,1200px, cover;
+	border: 0px solid black;
+	border-collapse: collapse;
+	height: 720px;
+}
