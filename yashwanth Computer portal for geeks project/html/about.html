@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	<title>About</title>
+	<style type="text/css">
+		header
+        {
+        	display: flex;
+	        border: 0px solid blue;
+	        background-color: #0048ff5c;
+        }
+        a
+        {
+	        text-decoration: none;
+	        color: white;
+        }
+        ul
+        {
+	        float: right;
+	        display: flex;
+        }
+        li
+        {
+	        display: inline-block;
+	        padding-right: 70px;
+        }
+        h1
+        {
+	        color: #3e2442;;
+	        margin-left: 280px;
+        }
+        a:hover
+        {
+	        background-color: gray;
+        }
+        p
+        {
+        	color: white;
+        }
+        img
+        {
+        	border-radius: 50%;
+        }
+        .container
+        {
+        	display: grid;
+        	grid-template-columns: 1fr 1fr 1fr;
+        	height: 740px;
+			width: 100%;
+			text-align: center;
+			font-size: 40px;
+			align-items: center;
+			border: 2px solid gray;
+			background: url(../images/book.jpg);
+	        background-repeat: no-repeat;
+	        background-size: 1800px,1200px, cover;
+	        border: 0px solid black;
+	        border-collapse: collapse;
+        }
+        .container>div
+        {
+        	border: 1px solid blue;
+			text-align: center;
+			background-color: white;
+			color: black;
+			height: 500px;
+			width: 300px;
+			margin-left: auto;
+			margin-right: auto;
+			padding-top: 20px;
+			animation-name: yash;
+			animation-duration: 5s;
+		}
+		@keyframes yash
+		{
+			from{background-color: blue;}
+			to{background-color: green;}
+		}
+	</style>
+</head>
+<body>
+	<header style="background-color: #0048ff5c">
+		<img src="../images/nocopy.jpg" height="17%" width="8%">
+		<h1 align="center">A Computer Science Portal For Geeks</h1>
+    </header>
+    <div style="background-color: #000000b5">
+	<nav>
+		<ul>
+			<i class="fa-solid fa-house" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="index.html">Home</a></li>
+			<i class="fa-solid fa-user" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="login.html">Login</a></li>
+			<i class="fa-solid fa-bars" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="about.html">About</a></li>
+			<i class="fa-solid fa-phone" style="color: yellow; height: 12px; width: 22px;"></i><li><a href="contact.html">Contact</a></li>
+		</ul>
+	</nav><br><br><br>
+    </div>
+    <hr>
+	<div class="container">
+		<div><img src="../images/engineer1.jpg"><p style="color: black;font-size: 20px">-Henry<br>professor</p><p style="color: black;font-size: 20px">"The ability to make it through a strong computer science degree, at any level is priceless for students in both modern computing and everyday life. Higher education has been a catalyst in my life. I want to help others have the same opportunities."</div>
+		<div><img src="../images/engineer2.jpg"><p style="color: black;font-size: 20px">-Dwayne<br>Software engineer</p><p style="color: black;font-size: 20px">"Your skills from your previous career are totally relevant to tech. Lean into those skills and don’t forget about what you learned there. Also, if you love what you do and you are able to make the transition to tech, go for it! You will never look back, trust me."</p></div>
+		<div><img src="../images/engineer3.jpg"><p style="color: black;font-size: 20px">-Jake<br>System manager</p><p style="color: black;font-size: 20px">"The biggest surprise is how easy it can be to work in systems. It's sort of like magic before you know how a trick is done—it's amazing! At first it seems like you could never understand how the magician performs the trick, but then when you're shown the process, it seems so simple."</p></div>	
+	</div>
+</body>
+</html>
