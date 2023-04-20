@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>all movies</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="bootstrap1.html"><img src="images/bookmyshow.jpg" style="height: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+        <li class="nav-item" style="padding-left: 500px">
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalSignin">Login
+          </button>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        City<i class="fa fa-caret-down" aria-hidden="true" style="padding-left: 3px"></i>
+       </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Select City</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/hyderabad.jpg" style="height: 50px;width: 50px"><br>Hyderabad</a>
+          </div>
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/bengaluru.jpg" style="height: 50px;width: 50px"><br>Bengaluru</a>
+          </div>
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/chennai.jpg" style="height: 50px;width: 50px"><br>Chennai</a>
+          </div>
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/mumbai.jpg" style="height: 50px;width: 50px"><br>Mumbai</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog" id="modalSignin">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up for free</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+          <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+            Sign up with Twitter
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+            Sign up with Facebook
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+            Sign up with GitHub
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="grid">
+<div class="row">
+  <div class="col">
+<div class="card" style="width: 15rem;margin-left: 30px;">
+  <img src="images/yashoda.jpg" class="card-img-top" alt="...">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 8.7/10 29.7k votes</p>
+  </div>
+ </div>
+ </div>
+ <div class="col">
+ <div class="card" style="width: 15rem;">
+  <img src="images/blackpanther.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 9.1/10 110.5k votes</p>
+  </div>
+ </div>
+</div>
+<div class="col">
+ <div class="card" style="width: 15rem">
+  <img src="images/ram-setu.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 8.1/10 39.3k votes</p>
+  </div>
+ </div>
+</div>
+<div class="col">
+ <div class="card" style="width: 15rem">
+  <img src="images/kanatara4.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 9.2/10 87.2k votes</p>
+  </div>
+ </div>
+</div>
+<div class="row">
+  <div class="col">
+<div class="card" style="width: 15rem;margin-left: 30px;">
+  <img src="images/bhediya.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 7.7/10 58.7k votes</p>
+  </div>
+ </div>
+ </div>
+ <div class="col">
+ <div class="card" style="width: 15rem">
+  <img src="images/drishyam2.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 9.2/10 97.2k votes</p>
+  </div>
+ </div>
+</div>
+<div class="col">
+ <div class="card" style="width: 15rem">
+  <img src="images/uunchai.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 8.1/10 39.3k votes</p>
+  </div>
+ </div>
+</div>
+<div class="col">
+ <div class="card" style="width: 15rem">
+  <img src="images/strangeworld.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 9.2/10 87.2k votes</p>
+  </div>
+ </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my first bootstrap project</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img src="images/bookmyshow.jpg" style="height: 50px;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+        <li class="nav-item" style="padding-left: 500px">
+          <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#modalSignin">Login
+          </button>
+        </li>
+        <li class="nav-item dropdown">
+          <!-- Button trigger modal -->
+        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        City<i class="fa fa-caret-down" aria-hidden="true" style="padding-left: 3px"></i>
+       </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Select City</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/hyderabad.jpg" style="height: 50px;width: 50px"><br>Hyderabad</a>
+          </div>
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/bengaluru.jpg" style="height: 50px;width: 50px"><br>Bengaluru</a>
+          </div>
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/chennai.jpg" style="height: 50px;width: 50px"><br>Chennai</a>
+          </div>
+          <div class="col">
+        <a href="bootstrap1.html"><img src="images/mumbai.jpg" style="height: 50px;width: 50px"><br>Mumbai</a>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+        <li class="nav-item">
+          <a class="nav-link disabled">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog" id="modalSignin">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="background-color: #adb5bd">
+      <div class="modal-header">
+        <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up for free</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
+          <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
+            Sign up with Twitter
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
+            Sign up with Facebook
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
+            Sign up with GitHub
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<marquee><p id="thread">welcome to book my show</p></marquee>
+     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active d-block w-100" style="background-color: black;height: 450px;background-repeat: no-repeat;background-size: cover">
+    	<div class="row" style="margin-left: 90px;margin-right: 40px;">
+    	<div class="col">
+    	<div class="card" style="width: 19rem; height: 350px">
+        <img src="images/kantara3.jpg" class="card-img-top" id="id1" alt="..." style="height: 200px" >
+        <div class="card-body">
+        <p class="card-text">Celebrate this Blockbuster kantara in your near theatres</p>
+        <a href="#" class="btn btn-success" id="id4" style="margin-left: 20px">Book your tickets now</a>
+        </div>
+        </div>
+        </div>
+        <div class="col">
+    	<div class="card" style="width: 19rem;height: 350px">
+        <img src="images/sardar2.jpg" class="card-img-top" id="id2" alt="..." style="height: 200px">
+        <div class="card-body">
+        <p class="card-text">Karthi is back with sardar in your near theatres</p>
+        <a href="#" class="btn btn-success" id="id5" style="margin-left: 20px">Book your tickets now</a>
+        </div>
+        </div>
+        </div>
+         <div class="col">
+      <div class="card" style="width: 19rem;height: 350px">
+        <img src="images/avatar2.jpg" class="card-img-top" id="cal" alt="..." style="height: 200px">
+        <div class="card-body">
+        <p class="card-text">AVATAR 2 is releasing globally on december 16</p>
+        <a href="#" class="btn btn-success" id="id7" style="margin-left: 20px">Book your tickets now</a>
+        </div>
+        </div>
+        </div>
+        </div>
+     </div>
+    <div class="carousel-item">
+      <img src="images/pizzahut5.jpg" style="height: 450px;" class="block1 w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/swiggy.jpg" style="height: 450px" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+  
+</div>
+</div>
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#example1" style="border-radius: 60%"><div><img src="images/feedback.jpg" class="rounded float-end" alt="..." style="height: 50px;width: 60px;border-radius: 60%" onclick=""></div></button>
+<!-- Modal -->
+<div class="modal fade" id="example1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Feedback</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">give your feedback here</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+      </div>
+      <div class="modal-footer">
+         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">submit</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="grid">
+  <div class="row">
+    <div class="col">
+     <h3 style="font-family: serif; font-weight: bold;margin-top: 30px;margin-left: 30px;">Recommended Movies</h3>
+    </div>
+    <div class="col">
+      <a href="viewall.html" style="color: red"><p style="font-family: serif;margin-top: 35px;margin-left: 500px;color: red">See all<i class="fa fa-angle-right" aria-hidden="true" style="padding-left: 3px"></i></p></a>
+    </div>
+  </div>
+<div class="row">
+  <div class="col">
+<div class="card" style="width: 15rem;margin-left: 30px;">
+  <img src="images/yashoda.jpg" class="card-img-top" alt="...">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 8.7/10 29.7k votes</p>
+  </div>
+ </div>
+ </div>
+ <div class="col">
+ <div class="card" style="width: 15rem;">
+  <img src="images/blackpanther.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 9.1/10 110.5k votes</p>
+  </div>
+ </div>
+</div>
+<div class="col">
+ <div class="card" style="width: 15rem">
+  <img src="images/ram-setu.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 8.1/10 39.3k votes</p>
+  </div>
+ </div>
+</div>
+<div class="col">
+ <div class="card" style="width: 15rem">
+  <img src="images/kanatara4.jpg" class="card-img-top" alt="..." style="height: 292px">
+  <div class="card-body" style="background-color: black;">
+    <p class="card-text" style="color: white;"><i class="fa fa-star" aria-hidden="true" style="color: red"></i> 9.2/10 87.2k votes</p>
+  </div>
+ </div>
+</div>
+<div class="reel" id="reeel" style="background-image: url(images/reel3.jpg);height: 80px;margin-top: 20px;">
+<div class="row">
+  <div class="col" style="color:blue">bookmyshow<br>STREAM</div>
+  <div class="col" style="color:orange;font-style: bold;font-family:sans-serif;font-size: 30px">Endless Entertainment Anytime,Anywhere.</div>
+</div>
+</div>
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3" style="margin-left: 400px">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p>&copy; 2022 Company, Inc. All rights reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
+        <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+      </ul>
+    </div>
+  </footer>
+</div>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+li
+{
+	list-style-type: none;
+}
+body
+{
+	width: 100%;
+}
+a
+{
+  text-decoration: none;
+}
+marquee
+{
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+#thread
+{
+  position: relative;
+  animation-name: mymove;
+  animation-duration: 5s;
+}
+@keyframes mymove
+{
+  0%   { right:0px; top:0px;}
+  25%  { right:50px; top:0px;}
+  50%  { right:100px; top:0px;}
+  100% { right:150px; top:0px;}
+}
+#id4:hover
+{
+  background-color: black;
+}
+#id5:hover
+{
+  background-color: black;
+}
+#id7:hover
+{
+  background-color: black;
+}
+#id1:hover
+{
+  content: url(images/kantara.gif);
+}
+#id2:hover
+{
+  content: url(images/sardar.gif);
+}
+#cal:hover
+{
+  content: url(images/avatar2.gif);
+}
